@@ -11,7 +11,7 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(FileHelper))]
 namespace scoreboard_dlouhodobka.UWP
 {
-    class FileHelper 
+    class FileHelper : IFileHelper
     {
         public string GetLocalFilePath(string filename)
         {

@@ -19,7 +19,7 @@ using scoreboard_dlouhodobka.Droid;
 [assembly: Xamarin.Forms.Dependency(typeof(FileHelper))]
 namespace scoreboard_dlouhodobka.Droid
 {
-    class FileHelper 
+    class FileHelper: IFileHelper
     {
         public string GetLocalFilePath(string filename)
         {

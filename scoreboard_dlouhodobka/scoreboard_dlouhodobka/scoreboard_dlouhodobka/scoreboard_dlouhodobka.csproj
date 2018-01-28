@@ -39,6 +39,16 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="classes\Database.cs" />
+    <Compile Include="classes\db_equipment.cs" />
+    <Compile Include="classes\db_equipment_race.cs" />
+    <Compile Include="classes\db_race-content.cs" />
+    <Compile Include="classes\db_race-values.cs" />
+    <Compile Include="classes\db_race.cs" />
+    <Compile Include="classes\db_settings.cs" />
+    <Compile Include="classes\db_sports.cs" />
+    <Compile Include="classes\db_training-content.cs" />
+    <Compile Include="classes\db_training-values.cs" />
+    <Compile Include="classes\db_training.cs" />
     <Compile Include="IFileHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

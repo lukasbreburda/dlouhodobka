@@ -12,9 +12,23 @@ namespace scoreboard_dlouhodobka.classes
     {
         private SQLiteAsyncConnection database;
 
-        public Database(string dbPath) //inicializace tabulek databáze 
+        public Database(string dbPath) //inicialization tables in database
         {
+            database = new SQLiteAsyncConnection(dbPath);
+
+            database.CreateTableAsync<db_settings>().Wait();
+            database.CreateTableAsync<db_sports>().Wait();
+
+            database.CreateTableAsync<db_race>().Wait();
+            database.CreateTableAsync<db_race_content>().Wait();
+            database.CreateTableAsync<db_race_values>().Wait();
             
+            database.CreateTableAsync<db_training>().Wait();
+            database.CreateTableAsync<db_training_content>().Wait();
+            database.CreateTableAsync<db_training_values>().Wait();
+
+            database.CreateTableAsync<db_equipment>().Wait();
+            database.CreateTableAsync<db_equipment_race>().Wait();
             Debug.WriteLine(dbPath);
         }
     }
